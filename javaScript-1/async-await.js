@@ -31,42 +31,47 @@
 
 // console.log(`synchronous code 2`);
 
-let promises = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    console.log("I am 3 sec");
-    // resolve("value 3");
-  }, 3000);
-  setTimeout(() => {
-    console.log("I am 2 sec");
-    // resolve("value 2");
-  }, 2000);
-  setTimeout(() => {
-    console.log("I am 1 sec");
-    resolve("value 1");
-  }, 1000);
-})
-  .then((value) => {
-    console.log(value);
-    return value;
-  })
-  .then((value2) => {
-    setTimeout(() => {
-      console.log(`I am ${value2}`);
-    }, 2000);
-  });
-
-// console.log(promises);
-
-// async function atatime() {
+// let promises = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     console.log("I am 3 sec");
+//     // resolve("value 3");
 //   }, 3000);
 //   setTimeout(() => {
 //     console.log("I am 2 sec");
+//     // resolve("value 2");
 //   }, 2000);
 //   setTimeout(() => {
 //     console.log("I am 1 sec");
+//     resolve("value 1");
 //   }, 1000);
-// }
+// })
+//   .then((value) => {
+//     console.log(value);
+//     return value;
+//   })
+//   .then((value2) => {
+//     setTimeout(() => {
+//       console.log(`I am ${value2}`);
+//     }, 2000);
+//   });
 
-// atatime();
+// console.log(promises);
+
+async function atatime() {
+  // let third = setTimeout(() => {
+  //   console.log("I am 3 sec");
+  // }, 3000);
+  // let second = setTimeout(() => {
+  //   console.log("I am 2 sec");
+  // }, 2000);
+  // let first = setTimeout(() => {
+  //   console.log("I am 1 sec");
+  // }, 1000);
+  // let print = await first
+}
+
+// atatime().then((value)=>{
+
+// })
+
+window.console.log("Hello I am window, the global object ");
