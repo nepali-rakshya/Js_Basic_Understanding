@@ -7,4 +7,5 @@ try {
   }
 } catch (error) {
   console.log(error.stack);
+  console.log(new Error("Please enter valid age"));
 }
