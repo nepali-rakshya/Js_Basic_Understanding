@@ -1,9 +1,21 @@
-console.log("first");
+console.log("I wanna be first");
 
-for (let i = 0; i <= 100; i++) {
-  setTimeout(() => {
-    console.log("second");
-  }, 0);
+function first() {
+  return new Promise((res) => {
+    console.log("What is the temperature today: ");
+    res("It is 12 degree Celcius");
+  });
+}
+function first2() {
+  console.log("What was the temperature today: ");
 }
 
-console.log("third");
+setTimeout(() => {
+  console.log("Where do I exist");
+}, 0);
+console.log("I wanna be second");
+first2();
+
+first().then((response) => {
+  return console.log(response);
+});
