@@ -64,4 +64,9 @@
 // }
 // gfg();
 
-// console.log(4 < 5 || console.log("i am here"));
+// console.log(4 > 5 || console.log("i am here"));
+
+let a = 5;
+let b = a;
+b = 6;
+console.log(b);
