@@ -25,17 +25,43 @@
 // console.log(`c == d ? ${c == d}`);
 // console.log(c === d ? true : false);
 
-const c = [1, 2];
-console.log(c);
+// const c = [1, 2];
+// console.log(c);
 
-function add(array, element) {
-  //   array.push(element);
-  array = [element];
-  console.log(array);
-  return array;
-}
+// function add(array, element) {
+//   //   array.push(element);
+//   array = [element];
+//   console.log(array);
+//   return array;
+// }
 
-let value = add(c, 3);
-console.log(value);
+// let value = add(c, 3);
+// console.log(value);
 
-console.log(value === c ? true : false);
+// console.log(value === c ? true : false);
+
+// Short Circuiting in Js
+
+// function theSameOldFoo(name) {
+//   name = name && "Bar";
+//   console.log("My best firend's name is " + name);
+// }
+
+// theSameOldFoo();
+// theSameOldFoo("Beau");
+
+// function gfg() {
+//   // AND short circuit
+//   console.log(true && true);
+//   console.log(true && false);
+//   console.log(false && true);
+//   console.log(false && false);
+//   // OR short circuit
+//   console.log(true || true);
+//   console.log(true || false);
+//   console.log(false || true);
+//   console.log(false || false);
+// }
+// gfg();
+
+// console.log(4 < 5 || console.log("i am here"));
